@@ -2,6 +2,6 @@
 use ecommerce;
 
 select buyer_id, count(buyer_id) as buy
-from transaction
+from transaction 
 GROUP BY buyer_id
 having buy >= 3;
